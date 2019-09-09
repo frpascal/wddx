@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+# == Synopsis 
+# The wddx command can be used to save pretty print wddx XML files.
+#
+# == Usage
+# You can pipe wddx xml into the wddx command:
+#     xmllint test.xml | wddx
+# You can read files:
+#     wddx < wddx.xml
+#  OR
+#     wddx wddx.xml
+#
+# == Author
+# Stefan Saasen
+#
+# == Copyright
+# Copyright(c), 2008 Stefan Saasen juretta.com
+require 'rdoc/usage'
+require 'rubygems'
+require 'wddx'
+require 'pp'
+require 'open-uri'
+
+def print_wddx(xml)
+  pp WDDX.load(xml).data
+end
+
+if STDIN.tty?       
+  ARGV.size < 1 ? RDoc::usage('usage') : print_wddx(open(ARGV[0]))
+else
+  print_wddx(STDIN.read)
+end

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE wddxPacket SYSTEM "../../support/wddx_10.dtd">
+<wddxPacket version='1.0'>
+	<header/>
+	<data>
+		<array length='3'>
+			<string>A string</string>
+			<number>1234</number>
+			<binary length='8'>QmluIGRhdGE=</binary>
+		</array>
+	</data>
+</wddxPacket>

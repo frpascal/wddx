@@ -1,0 +1,41 @@
+=== 0.4.1 / 2008-04-31
+* Minor code cleanup.
+* WDDX library now works in Ruby 1.8 and 1.9
+
+=== 0.4.0 / 2008-03-04
+* Added wddx binary. Pretty prints a wddx data structure.
+
+  Usage: 
+	wddx FILE|URL
+  OR
+    wddx < wddx.xml
+  OR
+    cat /path/to/wddx.xml | wddx
+
+=== 0.3.3 / 2008-03-02
+* Fixed test issues when running the test in a different timezone.
+
+=== 0.3.2 / 2007-08-22
+* Bugfix release: Fixes bug 13288.
+
+=== 0.3.1 / 2007-04-19
+* Bugfix release: Fixes bugs 10148 and 10149 reported by Rhett Sutphin
+* Patch [#10152] kindly provided by Rhett Sutphin!
+
+=== 0.3.0 / 2007-04-07
+* New example wddx_serialize.rb added (see examples/ subdirectory).
+* WDDX::Struct now includes Enumerable
+* Documentation improved
+* Symbol now responds_to?(:to_wddx)
+
+=== 0.2.1 / 2006-12-20
+Bugfix Release
+* Fixed TcWddxComplexTest 
+
+=== 0.2.0 / 2006-12-19
+Added Rails support
+
+Rails ActiveRecord::Base objects can be serialised to WDDX-XML using the +to_wddx+ method.
+
+=== 0.1.0 / 2006-12-18
+Initial release

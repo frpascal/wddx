@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE wddxPacket SYSTEM "../../support/wddx_10.dtd">
+<wddxPacket version='1.0'>
+	<header/>
+ 	<data>
+		<array length='3'>
+			<number>23</number>
+			<number>3.14159265358979</number>
+			<struct>
+				<var name='key2'>
+					<dateTime>2000-01-01T06:00:00+01:00</dateTime>
+				</var>
+			</struct>
+		</array>
+	</data>
+</wddxPacket>

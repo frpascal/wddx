@@ -41,12 +41,6 @@ class Numeric #:nodoc:
   end
 end
 
-class Bignum #:nodoc:
-  def wddx_serialize
-    self.to_f.wddx_serialize
-  end
-end
-
 class TrueClass #:nodoc:
   def wddx_serialize
     '<boolean value=\'true\'/>'
